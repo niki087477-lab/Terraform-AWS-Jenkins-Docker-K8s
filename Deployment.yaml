@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: movie-app
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: movie-app
+
+  template:
+    metadata:
+      labels:
+        app: movie-app
+
+    spec:
+      containers:
+      - name: movie-app
+
+        image: YOUR_DOCKERHUB_USERNAME/movie-app:latest
+
+        ports:
+        - containerPort: 3000
