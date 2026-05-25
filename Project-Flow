@@ -1,0 +1,8 @@
+app/
+│
+├── app.js
+├── package.json
+├── Dockerfile
+├── deployment.yaml
+├── service.yaml
+└── Jenkinsfile
